@@ -3,7 +3,7 @@
    ============================================================ */
 var CONFIG = {
   // Contatti per ricevere gli ordini (lascia "" per nascondere il pulsante)
-  whatsapp: "3895211047",          // numero con prefisso, senza + e senza spazi (es. 393331234567)
+  whatsapp: "393895211047",          // numero con prefisso, senza + e senza spazi (es. 393331234567)
   email: "accollinare@gmail.com",        // email che riceve gli ordini
 
   // Costo extra per la personalizzazione (nome + numero), per ogni maglia
