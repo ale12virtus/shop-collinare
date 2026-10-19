@@ -21,19 +21,19 @@ var CONFIG = {
     {
       id: "home", nome: "Maglia Home", prezzo: 30,
       taglie: ["S", "M", "L", "XL", "XXL"],
-      personalizzabile: true, foto: "",
+      personalizzabile: true, foto: "img/maglia-home.jpeg",
       colori: { corpo: "#ffd400", dettagli: "#121212" }
     },
     {
       id: "away", nome: "Maglia Away", prezzo: 30,
       taglie: ["S", "M", "L", "XL", "XXL"],
-      personalizzabile: true, foto: "",
+      personalizzabile: true, foto: "img/maglia-away.jpeg",
       colori: { corpo: "#121212", dettagli: "#ffd400" }
     },
     {
       id: "felpa", nome: "Felpa", prezzo: 40,
       taglie: ["S", "M", "L", "XL", "XXL"],
-      personalizzabile: false, foto: "",
+      personalizzabile: false, foto: "img/felpa.jpeg",
       colori: { corpo: "#2a2a2a", dettagli: "#ffd400" }, tipo: "felpa"
     }
   ]
