@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shop Ufficiale - A.C. Collinare</title>
+<meta name="description" content="Shop ufficiale A.C. Collinare: maglie home e away, felpa, personalizzazione nome e numero." />
+<link rel="icon" href="img/logo.jpeg" />
+<link rel="stylesheet" href="shop.css" />
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <img src="img/logo.jpeg" alt="Stemma A.C. Collinare" />
+      <span>A.C. Collinare <small>Shop ufficiale</small></span>
+    </div>
+    <button class="cart-btn" id="open-cart" aria-label="Apri il carrello">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 12.4a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L21 7H6"/></svg>
+      <span>Carrello</span>
+      <b id="cart-count">0</b>
+    </button>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <h1>Veste i colori del Collinare</h1>
+    <p>Scegli taglia e personalizzazione, aggiungi al carrello e invia l'ordine. Ti confermiamo noi disponibilit&agrave; e ritiro.</p>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="products" id="products" aria-live="polite"></div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">&copy; 2026 A.C. Collinare &middot; Nessun pagamento online: si paga come scelto all'ordine.</div>
+</footer>
+
+<!-- CARRELLO -->
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Carrello">
+  <div class="drawer-head">
+    <h2>Il tuo ordine</h2>
+    <button class="icon-btn" id="close-cart" aria-label="Chiudi carrello">&times;</button>
+  </div>
+
+  <div class="drawer-body">
+    <div id="cart-empty" class="empty">Il carrello &egrave; vuoto.</div>
+    <ul id="cart-list" class="cart-list"></ul>
+
+    <form id="order-form" autocomplete="on" novalidate>
+      <h3>I tuoi dati</h3>
+      <div class="field">
+        <label for="nome">Nome e cognome</label>
+        <input id="nome" name="nome" type="text" autocomplete="name" required />
+      </div>
+      <div class="field">
+        <label for="telefono">Telefono</label>
+        <input id="telefono" name="telefono" type="tel" autocomplete="tel" required />
+      </div>
+
+      <h3>Metodo di pagamento</h3>
+      <div class="pay" id="pay-options"></div>
+
+      <div class="field">
+        <label for="note">Note (opzionale)</label>
+        <textarea id="note" name="note" rows="2"></textarea>
+      </div>
+    </form>
+  </div>
+
+  <div class="drawer-foot">
+    <div class="total-row"><span>Totale</span><strong id="total">&euro;0,00</strong></div>
+    <p class="err" id="form-error" role="alert" hidden></p>
+    <div class="send" id="send-buttons"></div>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="shop.js"></script>
+</body>
+</html>
